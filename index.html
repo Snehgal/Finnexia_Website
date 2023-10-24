@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Finnexia | IIIT Delhi</title>
+	<link rel="shortcut icon" href="Images/finnexia-logo2.jpeg" type="image/x-icon">
+</head>
+<body onload="myLoader()">
+	<div id="loading"></div>
+	
+	<!-- <div id="popUpMain" data-aos="zoom-in">
+		<div id='newsHeading'><h1>Upcoming Event</h1></div>
+		<div id="popup"></div>
+		<div id="popButton">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfDAZm56lDnChvM_CQEWyXpSmywFOFpIZqchtYNMixQDYLLiw/viewform" target="_blank"><button class="register">Register</button></a>
+			<button onclick="notifIgnore()" class="ignore">Later</button>
+		</div>
+	</div> -->
+	
+	<section id="header">
+		<div class="header container">
+			<div class="nav-bar">
+				<div class="brand">
+					<a href="#home"><h1>Finnexia</h1></a>
+				</div>
+				<div class="nav-list">
+					<div class="hamburger">
+						<div class="bar"></div>
+					</div>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#events">Events</a></li>
+						<li><a href="team.html">Our Team</a></li>
+						<li><a href="#newsletter">Newsletter</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<!-- Home Page -->
+	<section id="home">
+		<div class="home container" data-aos="fade-in">
+			<div class="title-name">
+				<h1 id="title-state">FINNEXIA</h1>
+				<h2 id='text-state'>FINANCE CLUB | IIIT DELHI</h2>	
+				<p id='para-state'></p>
+			</div>
+			
+			<div id="home-logo">
+				<img class="img-logo" src="Images/finnexia-logo.jpeg">
+			</div>
+			
+			<div class="change-button">
+				<button onclick="changeText1()" id='button1'><i class="fa fa-home fa-lg"></i></button>
+				<button onclick="changeText2()" id='button2'><i class="fa fa-question fa-lg"></i></button>
+			</div>
+		</div>
+	</section>
+	
+	
+	<!-- About Us section -->
+	<div class="overall">	
+		<section id="about">
+			<div class="about container">
+				<div>
+					<div data-aos="fade-in">
+						<img class="about-img" src="Images/about-us-clipart.png">
+					</div> 
+				</div>
+				<div>
+					<h1 class="section-title">About Us</h1>
+					<div class="about-icon">
+						<img src="https://img.icons8.com/bubbles/100/000000/money.png"/>
+					</div>
+					<p>
+						Finnexia, The Finance Club of Indraprastha Institute of Information Technology, Delhi is a student-driven initiative for 
+						fostering a culture for Finance among its students. It was established with the purpose of enhancing the financial knowledge
+						of students through various events, activities, workshops and knowledge sharing sessions.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	
+	<!--Events section -->
+	<div class="overall">	
+		<section id="events">	
+			<div class="events container">
+				<div class="event-top">
+					<h1 class="section-title">Events</h1>
+					<div class="event-icon">
+						<img src="https://img.icons8.com/bubbles/100/000000/overtime.png"/>
+					</div>
+					<p id='ex'><b>Events Planned</b></p>
+				</div>
+				<div class="event-bottom">
+					
+					<div class="timeline">
+						<div class="event-name left">
+							<div class="content" data-aos="fade-up">
+								<h2><i class="fa fa-eur" aria-hidden="true"></i>     Biz Quiz</h2>
+								<p>Want to put your finance knowledge to test? This business quiz is Finnexia's first-ever event.</p>
+							</div>
+						</div>
+						
+						<div class="event-name right">
+							<div class="content" data-aos="fade-up">
+								<h2><i class="fa fa-usd" aria-hidden="true"></i>     Algo Trading</h2>
+								<p>We will discuss the basics of algorithm trading and then hold a competition for building an algorithm.</p>
+							</div>
+						</div>
+						
+						<div class="event-name left">
+							<div class="content" data-aos="fade-up">
+								<h2><i class="fa fa-inr" aria-hidden="true"></i>     Mock Stock</h2>
+								<p>A game of luck, skill, and strategy. Navigate your way through the stock market, build your portfolios, maximize your profits, and win lucrative gains. <br>It's your chance to check if you play the market or the market plays you!</p>
+							</div>
+						</div>
+						
+						<div class="event-name right">
+							<div class="content" data-aos="fade-up">
+								<h2><i class="fa fa-jpy" aria-hidden="true"></i>     Guest Speaker</h2>
+								<p>Speakers from various fields of finance will be invited to give a talk.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	
+	<!-- Newsletter section -->
+	<div class="overall">
+		<section id="newsletter">
+			<div class="newsletter container">
+				
+				<div class="newsletter-top">
+					<h1 class="section-title">THE MONTHLY INTEREST</h1>
+					<div class="contact-icon">
+						<img src="https://img.icons8.com/bubbles/100/000000/news.png"/>
+					</div>
+					<div class="newsletter-content">
+						<p>
+							The Monthly Interest is Finnexia's monthly newsletter. Each issue covers a wide range of finance topics. 
+							<br><br>This month's issue covers Theranos, LIBOR and recent notifications about credit cards. 
+						<p>
+					</div>
+					
+					<div class="newsletter-btn">
+						<p><a href="newsletter-all.html">All Issues </a></p>
+					</div>
+					
+				</div>
+				
+				<div class="newsletter-current">
+					<div id="slider">
+						<figure>
+							<img src="all-newsletters\jan22-newsletter\0001.jpg">
+							<img src="all-newsletters\jan22-newsletter\0002.jpg">
+							<img src="all-newsletters\jan22-newsletter\0003.jpg">
+							<img src="all-newsletters\jan22-newsletter\0004.jpg">
+						</figure>
+					</div>
+					<div class="slider-content">
+						<p><a href="https://drive.google.com/file/d/1ILzFuFcXMInsqm0nIWAtvod7QhcNaKAi/view" target="_blank" id="read-here"><strong>JANUARY 2022</strong><br>Read Here</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	
+	<!-- Contact us section -->
+	<div class="overall">
+		<section id="contact">
+			<div class="contact container">
+				
+				<div class="contact-top">
+					<h1 class="section-title">CONTACT US</h1>
+				</div>
+				
+				<div class="contact-icon">
+					<img src="https://img.icons8.com/bubbles/100/000000/email.png">
+				</div>
+				
+				<div class="contact-item" data-aos="fade-in">
+					<div class="contact-info">
+						<h2>JOIN US</h2>
+						<p><a href="https://forms.gle/gL28BmYBMct4oyDs5" target="_blank"><i class="fab fa-wpforms"></i> Membership Form</a></p>
+					</div>
+					
+					<div class="contact-info">
+						<h2>PRESIDENTS</h2>
+						<p><a href="mailto:samiksha19331@iiitd.ac.in" target="_blank"><i class="fa fa-envelope"></i> Samiksha Modi</a></p>
+						<p><a href="mailto:dipankar19037@iiitd.ac.in" target="_blank"><i class="fa fa-envelope"></i> Dipankar Jiwani</a></p>	
+					</div>
+					
+					<div class="contact-info">
+						<h2>CONNECT WITH US</h2>
+						<p><a href="https://discord.gg/nqJj2VQeA7" target="_blank"><i class="fab fa-discord"></i> Discord</a></p>
+						<p><a href="https://www.instagram.com/finnexia.iiitd/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+						<p><a href="https://t.me/finnexiaIIITD" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></p>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+	</div>
+	
+	
+	<!-- Footer -->
+	<section id="footer">
+		<div class="footer container">
+			<div class="brand-footer">
+				<h1>© Finnexia | IIIT Delhi</h1>
+			</div>
+			<p>Created by <a href="https://www.linkedin.com/in/shivangidhiman/" target="_blank">Shivangi Dhiman</a> | <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">Finance Vectors by Vecteezy</a></p>
+		</div>
+	</section>
+	
+	<script src="script.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 150,
+			duration: 600,
+			easing: "ease-in"
+		});
+	</script>
+</body>
+</html>
